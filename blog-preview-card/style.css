@@ -1,0 +1,77 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body{
+    font-family: Figtree;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--Yellow);
+}
+
+.container{
+    width: 300px;
+    background-color: var(--white);
+    margin: 150px auto;
+    padding: 18px;
+    border-radius: .8rem;
+    box-shadow: 4px 4px 0 5px var(--Black);
+}
+
+.container:hover{
+    box-shadow: 10px 10px 0 5px var(--Black);
+}
+
+#illArticle{
+    width: 300px; 
+    height: 200px;
+    margin: 0 auto;
+    border-radius: .5rem;
+}
+
+h4{
+    width: fit-content;
+    background-color: var(--Yellow);
+    color: var(--Black);
+    padding: 5px 10px;
+    margin: 13px 0 8px 0;
+    border-radius: .5rem;
+    font-weight: 800;
+}
+
+.cardTitle{
+    color: var(--Black);
+    font-weight: 800;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.cardTitle:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+}
+.about{
+    color: var(--Grey);
+    margin-bottom: 15px;
+}
+
+.author{
+    display: flex;
+    align-items: middle;
+}
+
+#avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.author p{
+    padding: 0;
+    margin: 8px 0 0 8px;
+    color: var(--Black);
+    font-weight: 800;
+}

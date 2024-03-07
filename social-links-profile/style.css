@@ -1,0 +1,75 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+body{
+    font-size: 14px;
+    font-family: inter;
+    background-color: var(--Off-Black);
+}
+
+.container{
+    width: 350px;
+    margin: 150px auto;
+    background-color: var(--Dark-Grey);
+    border-radius: .7rem;
+    text-align: center;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 380px) {
+    .container{
+        width: 300px;
+        padding: 15px;
+    }
+}
+
+img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 5px auto;
+}
+
+h1{
+    margin: 5px 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+h4{
+    color: var(--Green);
+    font-weight: 600;
+    margin: 0;
+}
+
+p{
+    margin: 25px 0 20px 0;
+    color:white;
+    opacity: .8;
+}
+
+.linkSection{
+    width: 100%;
+}
+
+.soicalLinks{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    display: block;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: .8rem;
+    background-color: var(--Grey);
+}
+
+.soicalLinks:hover{
+    background-color: var(--Green);
+}
