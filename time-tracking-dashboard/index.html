@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Time tracking dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <div class="user">
+                <img src="image-jeremy.png" alt="" id="avatar">
+
+                <div>
+                    <p>Report for</p>
+                    <h1>Jeremy Robson</h1>
+                </div>
+            </div>
+
+            <div class="period">
+                <p id="daily">Daily</p>
+                <p id="weekly">Weekly</p>
+                <p id="monthly">Monthly</p>
+            </div>
+        </div>
+
+        <div class="activityBox">
+
+            <!--WORK-->
+            <div class="card">
+                <div class="sideSec no1">
+                    <img src="icon-work.jpg" alt="" class="cardIcon">
+                </div>
+                <div class="mainSec">
+                    <p class="activity">Work</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <div class="timing">
+                        <p class="current"><span>32</span>hrs</p>
+                        <p class="previous">Last Week - <span>36</span>hrs</p>
+                    </div>    
+                </div>
+            </div>
+
+            <!--PLAY-->
+            <div class="card">
+                <div class="sideSec no2">
+                    <img src="icon-play.jpg" alt="" class="cardIcon">
+                </div>
+                <div class="mainSec">
+                    <p class="activity">Play</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <div class="timing">
+                        <p class="current"><span>10</span>hrs</p>
+                        <p class="previous">Last Week - <span>8</span>hrs</p>
+                    </div>    
+                </div>
+            </div>
+
+            <!--STUDY-->
+            <div class="card">
+                <div class="sideSec no3">
+                    <img src="icon-study.jpg" alt="" class="cardIcon">
+                </div>
+                <div class="mainSec">
+                    <p class="activity">Study</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <div class="timing">
+                        <p class="current"><span>4</span>hrs</p>
+                        <p class="previous">Last Week - <span>7</span>hrs</p>
+                    </div>    
+                </div>
+            </div>
+
+            <!--EXERCISE-->
+            <div class="card">
+                <div class="sideSec no4">
+                    <img src="icon-esercise.jpg" alt="" class="cardIcon">
+                </div>
+                <div class="mainSec">
+                    <p class="activity">Exercise</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <div class="timing">
+                        <p class="current"><span>4</span>hrs</p>
+                        <p class="previous">Last Week - <span>5</span>hrs</p>
+                    </div>    
+                </div>
+            </div>
+
+            <!--SOCIAL-->
+            <div class="card">
+                <div class="sideSec no5">
+                    <img src="icon-social.jpg" alt="" class="cardIcon">
+                </div>
+                <div class="mainSec">
+                    <p class="activity">Social</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <div class="timing">
+                        <p class="current"><span>5</span>hrs</p>
+                        <p class="previous">Last Week - <span>10</span>hrs</p>
+                    </div>    
+                </div>
+            </div>
+
+            <!--SELF CARE-->
+            <div class="card">
+                <div class="sideSec no6">
+                    <img src="icon-self-care.jpg" alt="" class="cardIcon">
+                </div>
+                <div class="mainSec">
+                    <p class="activity">Self Care</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                        stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <div class="timing">
+                        <p class="current"><span>2</span>hrs</p>
+                        <p class="previous">Last Week - <span>2</span>hrs</p>
+                    </div>    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Pelz_Miracle</a>.
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

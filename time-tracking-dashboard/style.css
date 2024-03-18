@@ -1,0 +1,230 @@
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --Light-orange: hsl(15, 100%, 70%); /*work*/
+    --Soft-blue: hsl(195, 74%, 62%); /*play*/
+    --Light-red: hsl(348, 100%, 68%); /*study*/
+    --Lime-green: hsl(145, 58%, 55%); /*exercise*/
+    --Violet: hsl(264, 64%, 52%); /*social*/
+    --Soft-orange: hsl(43, 84%, 65%); /*self care*/
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(236, 45%, 20%);
+    --Desaturated-blue: #6f76c8;
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+body{
+    background-color: var(--Very-dark-blue);
+    font-family: 'Rubik';
+}
+
+.container{
+    display: grid;
+    gap: 15px;
+}
+
+.info{
+    display: grid;
+}
+
+#avatar{
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.user{
+    background-color: var(--Blue);
+    padding: 20px 0 35px 20px;
+    border-radius: .9rem;
+}
+
+.user  p{
+    color: var(--Pale-Blue);
+}
+
+h1{
+    color: white;
+    font-weight: lighter;
+}
+
+.period{
+    display: grid;
+    background-color: var(--Dark-blue);
+    color: var(--Desaturated-blue);
+    border-bottom-left-radius: .9rem;
+    border-bottom-right-radius: .9rem;
+}
+
+.period p:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.activityBox{
+    display: grid;
+    gap: 10px;    
+}
+
+.card{
+    display: grid; 
+    position: relative;
+    grid-template-rows: 50px 160px;
+}
+
+.cardIcon{
+    width: 70px;
+    height: 70px;
+    float: right;
+    border-top-right-radius: .9rem;
+    background-color:var(--Light-orange);
+}
+
+.sideSec{
+    border-top-left-radius: .9rem;
+    border-top-right-radius: .9rem;
+}
+
+.no1{
+    background-color: var(--Light-orange);
+}
+
+.no2{
+    background-color: var(--Soft-blue);
+}
+
+.no3{
+    background-color: var(--Light-red);
+}
+
+.no4{
+    background-color: var(--Lime-green);
+}
+
+.no5{
+    background-color: var(--Violet);
+}
+
+.no6{
+    background-color: var(--Soft-orange);
+}
+
+.mainSec{
+    width: 100%;
+    height: 80%;
+    color: white;
+    border-radius: .9rem;
+    background-color: var(--Dark-blue);
+    position: absolute;
+    top: 40px;
+}
+
+.mainSec:hover{
+    cursor: pointer;
+    background-color: var(--Desaturated-blue);
+}
+
+.activity{
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.mainSec svg{
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+.mainSec svg:hover{
+    cursor: pointer; 
+}
+
+.current{
+    font-size: 45px;
+    margin: 30px 0 0 20px;
+}
+
+.previous{
+    margin: 10px 0 0 20px;
+    color: var(--Desaturated-blue);
+}
+
+
+/*SCREEN SIZE 375PX*/
+@media (max-width: 380px) {
+    .container{
+        margin: 10px auto;
+        grid-template-columns: auto;
+    }
+    .info{
+        margin: 0 auto;
+        grid-template-rows: auto;
+    }
+
+    #avatar{
+        width: 60px;
+        height: 60px;
+    }
+    .user{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 70px 250px;
+    }
+    .user p {
+        display: inline-block;
+        margin: 0;
+    }
+    h1{
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    .period{
+        grid-template-columns: repeat(3, 50px);        
+        justify-content: space-around;
+    }
+    
+    .card{
+        grid-template-columns: 340px;
+        margin: 10px auto;
+    }
+    .timing{
+        display: grid;
+        grid-template-columns: 120px 170px;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+
+/*SCREEN SIZE ABOVE 1024PX*/
+@media (min-width:1024px) {
+    .container{
+        width: 1000px;
+        grid-template-columns: 200px 700px;
+        margin: 120px auto;
+    }
+    .user{
+        z-index: 1;
+    }
+    .info{
+        width:fit-content;
+        grid-template-rows: 350px 100px;
+    }
+    .period{
+        width: 180px;
+        position: absolute;
+        top: 460px;
+        grid-template-columns: auto;
+        padding: 15px 0 10px 20px;
+    }
+    .period p{
+        margin: 0 0 10px 0; 
+        width: fit-content;
+    }
+    .activityBox{
+        grid-template-columns:repeat(3, 200px);
+    }
+    
+}
