@@ -1,0 +1,172 @@
+:root{
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+body{
+    background-color:black;
+    /*background: linear-gradient(to bottom, black, hsl(220, 80%, 40%));*/
+    font-family: rubik;
+}
+
+.profile{
+    display: grid;
+    margin: 10px auto;
+}
+h1{
+    text-align: center;
+}
+   
+.myData{
+    color: white;
+    font-size:23px;
+}
+
+#role{
+    width: 19ch;
+    color: limegreen;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18) infinite alternate;
+    animation-timing-function: ease-out;
+}
+@keyframes typing {
+    from {
+       width: 0;
+    }
+}
+    
+#slider{
+    margin: 10px auto;
+}
+#sliderImg{
+    border: 3px solid whitesmoke;
+}
+
+h2{
+    color: limegreen;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.sectionContainer{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+.skill{
+    padding: 15px;
+    border-radius: .7rem;
+    background-color: var(--Off-Black); 
+    }
+
+.backgroundImg{
+    z-index: -5;
+    position: absolute;
+    opacity: .3;
+}
+
+.backgroundImg2{
+    z-index: -1;
+    position: absolute;
+    opacity: .1;
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+p a{
+    color: limegreen;
+    text-decoration: none;
+}
+
+@media (max-width : 380px){
+    .profile{
+        width: 375px;
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
+    h1{
+        font-size: 24px;
+    }
+    #sliderImg{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .sectionContainer{
+        grid-template-columns: 150px 150px; 
+        row-gap: 30px;
+        column-gap: 0;
+    }
+    .skill{
+        border: 1px solid whitesmoke;
+    }
+    .backgroundImg{
+        width: 375px;
+        height: 100%;
+    }
+    .backgroundImg2{
+        width: 90px;
+        right: 3%;
+        top: -1%;
+    }
+    .languages{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .profile{
+        width: 1500px;
+        grid-template-columns: 50% 50%;
+    }
+    #sliderImg{
+        width: 538px;
+        height: 500px;
+        border-radius: 30%;
+    }
+    h2{
+        font-size: 50px;
+    }
+    .sectionContainer{
+        grid-template-columns: repeat(4, 150px);
+    }
+    .skill{
+        transition: transform .4s ease-out;
+    }
+    .skill:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+        border: 1px solid whitesmoke;
+    }
+    .languages{
+        width: 100px;
+        height: 100px;
+    }
+    .backgroundImg{
+        width: 1500px;
+        height: auto;
+    }
+    .backgroundImg2{
+        left: 15%;
+        top: 30%;
+        width:400px;
+    }
+    footer{
+        font-size: 14px;
+        position: fixed;
+        bottom: 0;
+        left: 45%;
+    }
+}
+
